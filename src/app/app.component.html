@@ -1,0 +1,14 @@
+<app-nevbar></app-nevbar>
+<h1 class="h1">Welcome, <font color="Red"><b>{{name}}</b></font> to my First Angular Project!! </h1>
+<ul>
+    <li *ngFor="let stud of students">
+        <b>{{stud.name}}</b>
+        <br>
+        Branch: {{stud.branch}}
+        <br>
+        <br>
+    </li>
+</ul>
+<hr>
+<router-outlet></router-outlet>
+

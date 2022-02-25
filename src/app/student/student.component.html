@@ -1,0 +1,16 @@
+<div class="left">
+    <h3 Student List></h3>
+    <li *ngFor="let stud of students">
+        <b>{{stud.name}}</b>
+        <br>
+    </li>
+</div>
+<hr>
+
+<!--<h1 *ngIf="visible else elseBlock">This is a header</h1>
+<ng-template #elseBlock>
+    <h1> This is else block</h1>
+</ng-template>-->
+
+
+<input type="text" #name (keyup.enter)="show(name)">
